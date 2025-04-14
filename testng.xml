@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+
+  <listeners>
+    <listener class-name="utils.MyListener"/>
+  </listeners>
+  <test name="Functional Test">
+    <classes>
+      <class name="test.TestCustomerPortal"/>
+    </classes>
+  </test> <!-- Functional Test -->
+</suite> <!-- Functional Suite -->
