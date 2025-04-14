@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Functional_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Functional Suite</span>
+              <span class="suite-name border-passed">Functional Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Functional_Suite" class="hide-methods failed suite-Functional_Suite"> (hide)</a> <!-- hide-methods failed suite-Functional_Suite -->
-                      <a href="#" panel-name="suite-Functional_Suite" class="show-methods failed suite-Functional_Suite"> (show)</a> <!-- show-methods failed suite-Functional_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Functional_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Functional_Suite" title="test.TestCustomerPortal" class="method navigator-link" hash-for-method="LogoutfromPortal">LogoutfromPortal</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Functional_Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,6 +113,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional_Suite" title="test.TestCustomerPortal" class="method navigator-link" hash-for-method="LogoutfromPortal">LogoutfromPortal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Functional_Suite" title="test.TestCustomerPortal" class="method navigator-link" hash-for-method="cartFunctions">cartFunctions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -142,26 +133,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Functional_Suite" class="panel Functional_Suite">
-          <div class="suite-Functional_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.TestCustomerPortal</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LogoutfromPortal">
-                  </a> <!-- LogoutfromPortal -->
-                  <span class="method-name">LogoutfromPortal</span>
-                  <div class="stack-trace">java.lang.AssertionError: Logout is not successful expected [true] but found [false]
-	at test.TestCustomerPortal.LogoutfromPortal(TestCustomerPortal.java:91)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Suite-class-failed -->
           <div class="suite-Functional_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,6 +151,13 @@
                   <a name="LoginTest">
                   </a> <!-- LoginTest -->
                   <span class="method-name">LoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogoutfromPortal">
+                  </a> <!-- LogoutfromPortal -->
+                  <span class="method-name">LogoutfromPortal</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -250,19 +228,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddItemtoCart')
 data.setCell(0, 2, 'test.TestCustomerPortal')
-data.setCell(0, 3, 45204);
+data.setCell(0, 3, 45966);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'cartFunctions')
 data.setCell(1, 2, 'test.TestCustomerPortal')
-data.setCell(1, 3, 22327);
+data.setCell(1, 3, 30002);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LoginTest')
 data.setCell(2, 2, 'test.TestCustomerPortal')
-data.setCell(2, 3, 5619);
+data.setCell(2, 3, 5604);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LogoutfromPortal')
 data.setCell(3, 2, 'test.TestCustomerPortal')
-data.setCell(3, 3, 5149);
+data.setCell(3, 3, 5142);
 window.suiteTableData['Functional_Suite']= { tableData: data, tableDiv: 'times-div-Functional_Suite'}
 return data;
 }
@@ -300,25 +278,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">7177 ms</span>
+                <span class="method-start">11554 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddItemtoCart</span>
-                <span class="method-start">12812 ms</span>
+                <span class="method-start">17174 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cartFunctions</span>
-                <span class="method-start">58021 ms</span>
+                <span class="method-start">63145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LogoutfromPortal</span>
-                <span class="method-start">80353 ms</span>
+                <span class="method-start">93151 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85629 ms</span>
+                <span class="method-start">98298 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
